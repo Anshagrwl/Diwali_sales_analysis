@@ -1,147 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diwali Sales Analysis</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f8f9fa;
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        .banner {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .banner img {
-            width: 100%;
-            max-width: 850px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            text-align: center;
-            color: #e65100;
-            margin-top: 10px;
-        }
-        h2 {
-            color: #1565c0;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: Consolas, monospace;
-            color: #e65100;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
-        }
-        .highlight {
-            background-color: #fff3cd;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diwali Sales Analysis - README</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#facc15}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#071021 0%, #07162a 100%); color:#e6eef6}
+    .container{max-width:980px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; box-shadow:0 10px 30px rgba(2,6,23,0.7)}
+    header{display:flex;gap:20px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:12px;flex:0 0 84px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#ef4444);font-weight:700;color:#000;font-size:22px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .badges{margin-top:12px}
+    .badges img{height:20px;margin-right:8px}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:26px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+    pre{background:#041225;padding:12px;border-radius:8px;overflow:auto}
+    img.screenshot{width:100%;border-radius:8px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-    <div class="container">
-
-        <!-- Banner Image -->
-        <div class="banner">
-            <img src="assets/diwali_sales_banner.png" alt="Diwali Sales Analysis Banner">
+  <div class="container">
+    <header>
+      <div class="logo">DSA</div>
+      <div>
+        <h1>Diwali Sales Analysis</h1>
+        <p class="lead">An in-depth analysis of Diwali sales data to uncover business insights and improve marketing strategies.</p>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python" />
+          <img src="https://img.shields.io/badge/pandas-1.5+-green" alt="pandas" />
+          <img src="https://img.shields.io/badge/numpy-1.23+-yellow" alt="numpy" />
+          <img src="https://img.shields.io/badge/matplotlib-visualization-orange" alt="matplotlib" />
         </div>
+      </div>
+    </header>
 
-        <h1>🪔 Diwali Sales Analysis</h1>
-        <p>
-            This project focuses on analyzing **Diwali sales data** to uncover valuable insights into customer behavior, top-selling product categories, and shopping trends.  
-            Using **Python, Pandas, NumPy, and Matplotlib**, we visualize the data and identify useful patterns to help businesses maximize their festive season revenue.
-        </p>
+    <div class="grid">
+      <main class="card">
+        <h2>About the Project</h2>
+        <p>This project analyzes Diwali sales data to understand customer purchasing behavior, improve marketing strategies, and boost overall sales performance. The dataset includes customer demographics, purchase history, and product categories.</p>
 
-        <h2>📊 Project Objectives</h2>
+        <h2>Dataset</h2>
+        <p>The dataset used in this analysis contains details about customers, their demographics, purchase amounts, and product categories.</p>
+
+        <h2>Installation</h2>
+        <ol>
+          <li>Clone the repository:
+            <pre><code>git clone https://github.com/USERNAME/diwali-sales-analysis.git</code></pre>
+          </li>
+          <li>Install dependencies:
+            <pre><code>pip install -r requirements.txt</code></pre>
+          </li>
+          <li>Run the Jupyter Notebook:
+            <pre><code>jupyter notebook Diwali_Sales_Analysis.ipynb</code></pre>
+          </li>
+        </ol>
+
+        <h2>Analysis Performed</h2>
         <ul>
-            <li>Understand customer purchasing patterns during Diwali.</li>
-            <li>Analyze top-performing states, age groups, and occupations.</li>
-            <li>Visualize sales trends using Python libraries.</li>
-            <li>Generate actionable business insights.</li>
+          <li>Data Cleaning & Preprocessing</li>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>Customer Demographic Insights</li>
+          <li>Top Product Categories & Purchase Trends</li>
+          <li>Visualization of Key Findings</li>
         </ul>
 
-        <h2>🛠️ Tech Stack</h2>
+        <h2>Technologies Used</h2>
         <ul>
-            <li><b>Language:</b> Python</li>
-            <li><b>Libraries:</b> Pandas, NumPy, Matplotlib, Seaborn</li>
-            <li><b>IDE:</b> Jupyter Notebook</li>
-            <li><b>Dataset:</b> Diwali Sales Dataset</li>
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Numpy</li>
+          <li>Matplotlib / Seaborn</li>
+          <li>Jupyter Notebook</li>
         </ul>
 
-        <h2>📂 Project Structure</h2>
-        <pre>
-Diwali-Sales-Analysis/
-│
-├── README.html                  # Project documentation
-├── Diwali_Sales_Analysis.ipynb  # Jupyter Notebook for analysis
-├── requirements.txt             # Dependencies
-└── assets/
-    └── diwali_sales_banner.png  # Project banner image
-        </pre>
+        <h2>Usage</h2>
+        <p>After running the notebook, you can view interactive visualizations and insights about the sales trends, customer behavior, and product demand during Diwali.</p>
 
-        <h2>🚀 Getting Started</h2>
-        <p>To run this project locally:</p>
-        <pre>
-# Clone this repository
-git clone https://github.com/your-username/Diwali-Sales-Analysis.git
+        <h2>License</h2>
+        <p>This project is licensed under the MIT License — see the <code>LICENSE</code> file for details.</p>
+      </main>
 
-# Navigate to the project folder
-cd Diwali-Sales-Analysis
+      <aside class="card">
+        <h3>Project Screenshot</h3>
+        <img class="screenshot" src="assets/diwali_sales.png" alt="Diwali Sales Analysis Screenshot" />
 
-# Install dependencies
-pip install -r requirements.txt
+        <h3 style="margin-top:14px">Dataset Size</h3>
+        <p class="muted">~5000 rows | CSV format</p>
 
-# Open the Jupyter Notebook
-jupyter notebook Diwali_Sales_Analysis.ipynb
-        </pre>
+        <h3 style="margin-top:14px">Support</h3>
+        <p class="muted">Open an issue or contact <a href="mailto:you@example.com">anshaggarwalll123.com</a>.</p>
 
-        <h2>📈 Key Insights</h2>
-        <ul>
-            <li>Most buyers were from **Tier-1 cities** with higher spending power.</li>
-            <li>**Married women aged 26-35** were the top buyers.</li>
-            <li>**Electronics & Clothing** were the highest-selling categories.</li>
-            <li>Peak sales were observed during **festive discounts**.</li>
-        </ul>
-
-        <h2>🤝 Contributing</h2>
-        <p>
-            Contributions are welcome!  
-            Feel free to fork this repository and submit a pull request.
-        </p>
-
-        <h2>📜 License</h2>
-        <p class="highlight">This project is licensed under the MIT License.</p>
-
-        <div class="footer">
-            <p>Made with ❤️ by Ansh Aggarwal | Diwali Sales Analysis Project</p>
-        </div>
+        <h3 style="margin-top:14px">Author</h3>
+        <p class="muted">Ansh Aggarwal — <a href="https://github.com/USERNAME">Anshagrwl</a></p>
+      </aside>
     </div>
+
+    <footer>
+      <p>Update <code>README.html</code> with your repository URL and screenshot path before pushing it to GitHub.</p>
+    </footer>
+  </div>
 </body>
-</html>
+</html> 
