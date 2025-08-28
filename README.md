@@ -5,25 +5,94 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Diwali Sales Analysis - README</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#facc15}
-    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#071021 0%, #07162a 100%); color:#e6eef6}
-    .container{max-width:980px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; box-shadow:0 10px 30px rgba(2,6,23,0.7)}
-    header{display:flex;gap:20px;align-items:center}
-    .logo{width:84px;height:84px;border-radius:12px;flex:0 0 84px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#ef4444);font-weight:700;color:#000;font-size:22px}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted);margin:6px 0 0}
-    .badges{margin-top:12px}
-    .badges img{height:20px;margin-right:8px}
-    .grid{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:26px}
-    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
-    pre{background:#041225;padding:12px;border-radius:8px;overflow:auto}
-    img.screenshot{width:100%;border-radius:8px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
-    footer{margin-top:20px;color:var(--muted);font-size:13px}
-    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #94a3b8;
+      --accent: #facc15;
+    }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+      margin: 0;
+      background: linear-gradient(180deg,#071021 0%, #07162a 100%);
+      color: #e6eef6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 48px auto;
+      padding: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+    }
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .logo {
+      width: 84px;
+      height: 84px;
+      border-radius: 12px;
+      flex: 0 0 84px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg,var(--accent),#ef4444);
+      font-weight: 700;
+      color: #000;
+      font-size: 22px;
+    }
+    h1 { margin: 0; font-size: 28px; }
+    p.lead { color: var(--muted); margin: 6px 0 0; }
+    .badges { margin-top: 12px; }
+    .badges img { height: 20px; margin-right: 8px; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 20px;
+      margin-top: 26px;
+    }
+    .card {
+      background: rgba(255,255,255,0.02);
+      padding: 18px;
+      border-radius: 12px;
+    }
+    pre {
+      background: #041225;
+      padding: 12px;
+      border-radius: 8px;
+      overflow: auto;
+    }
+    img.screenshot {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    footer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .banner {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 25px rgba(2,6,23,0.8);
+    }
+    @media (max-width:880px) {
+      .grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <!-- Banner Image -->
+    <img src="assets/Diwali_Sales_Analysis_Banner.png" alt="Diwali Sales Analysis Banner" class="banner" />
+
     <header>
       <div class="logo">DSA</div>
       <div>
@@ -86,16 +155,16 @@
 
       <aside class="card">
         <h3>Project Screenshot</h3>
-        <img class="screenshot" src="assets/diwali_sales.png" alt="Diwali Sales Analysis Screenshot" />
+        <img class="screenshot" src="assets/Diwali_Sales_Analysis_Banner.png" alt="Diwali Sales Analysis Screenshot" />
 
         <h3 style="margin-top:14px">Dataset Size</h3>
         <p class="muted">~5000 rows | CSV format</p>
 
         <h3 style="margin-top:14px">Support</h3>
-        <p class="muted">Open an issue or contact <a href="mailto:you@example.com">you@example.com</a>.</p>
+        <p class="muted">Open an issue or contact <a href="mailto:anshaggarwalll123.com">anshaggarwalll123.com</a>.</p>
 
         <h3 style="margin-top:14px">Author</h3>
-        <p class="muted">Ansh Aggarwal — <a href="https://github.com/USERNAME">@USERNAME</a></p>
+        <p class="muted">Ansh Aggarwal — <a href="https://github.com/USERNAME">Anshagrwl</a></p>
       </aside>
     </div>
 
